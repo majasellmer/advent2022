@@ -18,14 +18,14 @@ with open('advent4.txt') as assignments:
     for pair in assignment_pairs:
         [left1, right1] = pair[0]
         [left2, right2] = pair[1]
-        if left1 <= left2 and right1 >= right2:
-            full_overlap_counter += 1
-        elif left1 >= left2 and right1 <= right2:
-            full_overlap_counter += 1
+        # if left1 <= left2 and right1 >= right2:
+        #     full_overlap_counter += 1
+        # elif left1 >= left2 and right1 <= right2:
+        #     full_overlap_counter += 1
         if left1 <= left2 <= right1:
             overlap_counter += 1
         elif left2 <= left1 <= right2:
             overlap_counter += 1
-    print(full_overlap_counter)
+    # print(full_overlap_counter)
     print(overlap_counter)
     
