@@ -12,7 +12,7 @@ with open('advent4.txt') as assignments:
         assignment1 = [int(x) for x in assignment_pair[0].split('-')]
         assignment2 = [int(x) for x in assignment_pair[1].split('-')]
         assignment_pairs.append([assignment1, assignment2])
-    full_overlap_counter = 0
+    # full_overlap_counter = 0
     overlap_counter = 0
     # for each pair, check if there is full overlap / overlap
     for pair in assignment_pairs:
